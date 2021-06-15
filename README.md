@@ -4,16 +4,16 @@
 * ### [Graduation Project Proposal(Youtube) - Re:Mind](https://www.youtube.com/watch?v=OO7-k4CzkLs)
 
 ***
-> Table Of Contents
-> 1. Motivation
-> 2. Key features
-> 3. Technologies Used
-> 4. Progress
-> 5. Development plan
-> 6. Role & Plan
+> Table Of Contents <br>
+> [1. Motivation](#1-motivation) <br>
+> [2. Key features](#2-key-features) <br>
+> [3. Technologies Used](#3-technologies-used)<br>
+> [4. Progress](#4-progress)<br>
+> [5. Development plan](#5-development-plan)<br>
+> [6. Role & Plan](#6-role-and-plan)<br>
 
 ***
-1. Motivation
+# 1. Motivation
 
 | IF ???           |                                                                                                           |
 |------------------|-----------------------------------------------------------------------------------------------------------|
@@ -50,7 +50,7 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 * Make my own deep fake video
 
 ***
-2. Key features
+# 2. Key features
 
 | DeepFake(Face Swap) +  Speech To Text(Lip Sync) |
 |----------------------------------------------|
@@ -73,7 +73,7 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 Low Quality + Done Slowly
 
 ***
-3. Technologies used
+# 3. Technologies used
 
 * [Deep Fake(Face Swap)](https://en.wikipedia.org/wiki/Deepfake)
 * A deep learning – based technique able to create fake images/videos.
@@ -191,7 +191,7 @@ It then decodes using both encoders, compares the result with the speech encoder
 
 
 ***
-4. Progress
+# 4. Progress
 
 | Sequence diagram | Usecase diagram |
 |----------------- |-----------------|
@@ -201,7 +201,7 @@ It then decodes using both encoders, compares the result with the speech encoder
 * ![16](https://user-images.githubusercontent.com/67234937/121910012-70a42d80-cd69-11eb-84fd-e03da2a3d153.png)
 
 ***
-5. Development Plan
+# 5. Development Plan
 
 * Focus Direction
 <table>
@@ -226,7 +226,7 @@ it can be provided as if he or she is speaking the voice.</td></tr>
 |![21](https://user-images.githubusercontent.com/67234937/121984186-80555d80-cdcd-11eb-97d2-a8c4905f5177.png) | [Result]<br><br> Download and share <br><br> Using voice function -> mp4 <br> If not ->  gif or jpg |
 
 ***
-6. Role & Plan
+# 6. Role and Plan
 * Plan
 * <img width="600" alt="17" src="https://user-images.githubusercontent.com/67234937/121911176-7ea67e00-cd6a-11eb-8d9d-544f76e1bf19.PNG">
 
