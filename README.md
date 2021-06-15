@@ -97,7 +97,7 @@ Low Quality + Done Slowly
 * ![25](https://user-images.githubusercontent.com/67234937/121985241-5a30bd00-cdcf-11eb-817f-ffd88b9382e7.png)
 * [FUNIT(Few-Shot Unsupervised Image-to-Image Translation)](https://github.com/NVlabs/FUNIT)
 * In the case of a Few shot, you need to create a dataset first because there are few datasets. <br> 
-So, we are considering two approaches in this section. First up is Punit. <br>
+So, we are considering two approaches in this section. First up is Funit. <br>
 With just a few example images during testing, Funit can create photos of various <br>
 expressions and angles with technology applied to the target layer that has never been seen before. <br>
 It has the advantage of being fast, but it is an algorithm that was originally applied to animals, <br> 
