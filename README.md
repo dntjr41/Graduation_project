@@ -1,7 +1,7 @@
 ### Graduation Project - Re:Mind
 ***
 
-* ### [Graduation Project Proposal(Youtube) - Re:Mind](https://www.youtube.com/watch?v=OO7-k4CzkLs)
+* ### [Graduation Project Proposal(Youtube) - Re:Mind](https://youtu.be/V59beXzW11Y)
 
 ***
 > Table Of Contents <br>
