@@ -80,18 +80,18 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 | ![image](https://user-images.githubusercontent.com/67234937/146105492-b22a91f0-1bcb-43c0-87a1-4e49429cfdb2.png) |
 | Requirements - Training Time, Convenience |
 
-| Model - Deep Fake [Reference.SimSwap](https://github.com/neuralchen/SimSwap) |
+| Model - Deep Fake [(Reference.SimSwap)](https://github.com/neuralchen/SimSwap) |
 | ------------------------------------- |
 | ![image](https://user-images.githubusercontent.com/67234937/146105617-e7dbd0c2-4629-42a3-8366-8797fca0acf9.png) |
 | ![image](https://user-images.githubusercontent.com/67234937/146105645-ee015349-e2f3-4c96-ad57-f042ac3787cb.png) <br> Overcome the defects in generalization and attribute preservation <br> Generalization to Arbitrary Identify   +   Preserving the Attributes of the Target | 
 | Image To Gif <br> ![image](https://user-images.githubusercontent.com/67234937/146105849-aefaa960-daa8-49b7-b5d6-f99776056886.png) | 
 
-| Model - Lip Syncing [Reference.Wav2lip](https://github.com/Rudrabha/Wav2Lip) |
+| Model - Lip Syncing [(Reference.Wav2lip)](https://github.com/Rudrabha/Wav2Lip) |
 | --------------------------------------- |
 | ![image](https://user-images.githubusercontent.com/67234937/146105906-d539f4c8-25fb-43b0-be61-cc0256b83c5a.png) <br> Extraction -> Training -> Converting | 
 | Image + Voice To MP4 <br> ![image](https://user-images.githubusercontent.com/67234937/146105994-fa57ec8c-56c6-450e-9d83-3b438e482545.png) |
 
-| Model - Voice Extraction [Reference.Spleeter](https://github.com/deezer/spleeter) |
+| Model - Voice Extraction [(Reference.Spleeter)](https://github.com/deezer/spleeter) |
 | --------------------------------------------- |
 | ![image](https://user-images.githubusercontent.com/67234937/146106122-93256bce-411b-480b-8b20-0e80433b5550.png) <br> Extract only voice from mp3, mp4 or wav file -> Better Quality !! |
 
@@ -102,41 +102,80 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 ***
 # 4. Implementation Detail
 
+* Model - Python Library
+* Deepfake (SimSwap) - Insightface, torch, torchVision, Cuda, cv2, tensorflow
+* Lip-Syncing (Wav2lip) - Opencv, torch, torchVision, Cuda, librosa, tensorflow
+* Voice Extraction (Spleeter) - tensorflow, ffmpeg-python, norbert, librosa, typer
 
+| Model - Deep Fake [(Reference.SimSwap)](https://github.com/neuralchen/SimSwap) |
+| ------------------------------------- |
+| 1. Set Image Size <br> ![image](https://user-images.githubusercontent.com/67234937/146106901-51add445-9d8b-426f-824c-ec1b724461c7.png) <br> 2. Set Option (Weights) <br> ![image](https://user-images.githubusercontent.com/67234937/146106942-909f9f9a-c086-4423-be69-f834027efa89.png) <br> 3. Convert (Main) <br> ![image](https://user-images.githubusercontent.com/67234937/146107000-31abe34f-fe7e-43de-919f-3325e053fce5.png) |
 
+| Model - Lip Syncing [(Reference.Wav2lip)](https://github.com/Rudrabha/Wav2Lip) |
+| --------------------------------------- |
+| 1. Data Parse <br> ![image](https://user-images.githubusercontent.com/67234937/146107092-6749e34e-2226-406f-bf88-8501e91f064c.png) <br> 2. Face Detect <br> ![image](https://user-images.githubusercontent.com/67234937/146107118-de057a90-ba69-4fd2-8c04-0182208b607a.png) <br> 3. Data Generation <br> ![image](https://user-images.githubusercontent.com/67234937/146107158-64fc20cd-d5bf-469a-858c-91ae9f76effa.png) <br> 4. Load Model & Weights <br> ![image](https://user-images.githubusercontent.com/67234937/146107183-5b358b3e-894a-4e4b-8a81-41fd9bca1a37.png) <br> 5. Main <br> ![image](https://user-images.githubusercontent.com/67234937/146107230-2a4cf0c0-38be-4256-8a01-a566594f3a9c.png) |
 
+| Model - Voice Extraction [(Reference.Spleeter)](https://github.com/deezer/spleeter) |
+| --------------------------------------------- |
+| Main (In Lip-Syncing) <br> ![image](https://user-images.githubusercontent.com/67234937/146107290-7f0ce79d-f0e2-4e15-a414-9042ba8fedaf.png) |
 
+| Flask (Backend) |
+| --------------- |
+| 1. Gif transformation <br> ![image](https://user-images.githubusercontent.com/67234937/146107384-8283c5ad-6ad2-42c5-849c-c6c038936f59.png) <br> 2. MP4 transformation <br> ![image](https://user-images.githubusercontent.com/67234937/146107419-561deab3-0bca-4944-8448-d86198fbcac1.png) |
 
+| Flutter (Frontend) |
+| ------------------ |
+| Modeling -> Return the Result <br> ![image](https://user-images.githubusercontent.com/67234937/146107497-37d72bf4-912c-437a-af0c-b2d012129540.png) |
 
+### 1st Mentoring Feedback
+* 1. Processing speed, model capacity problem <br> -> Lightweight model
+* 2. Wav2lip model is a model tailored to English <br> -> Since the expected user is Korean, <br> training after changing the dataset.
 
+| Lightweight model |
+| ----------------- |
+| To shorten the learning time, The training file is built in advance <br> ![image](https://user-images.githubusercontent.com/67234937/146107787-76010f38-2b68-48d8-9c83-7e173096a9a4.png) |
+| Lightweight - Deepfake |
+| Parameter was changed in consideration of Running Time & Quality <br> ![image](https://user-images.githubusercontent.com/67234937/146107928-c2f58c2d-0823-4df5-96aa-ac3f47ff04ca.png) <br> 
+| Lightweight - Lip-Syncing |
+| Parameter was changed in consideration of Eval model's sync, train loss & fps <br> ![image](https://user-images.githubusercontent.com/67234937/146108047-3d025414-49bc-434b-905a-e252e9f58075.png) <br> ![image](https://user-images.githubusercontent.com/67234937/146108060-321d00f5-36cb-42ac-a440-f9d5b3cfeab4.png) |
 
+| Changing weight dataset |
+| ----------------------- |
+| Compare them according to the environment of each datset (LRW, LRS2, LRS3) <br> ![image](https://user-images.githubusercontent.com/67234937/146108188-f2d17696-d33e-45c7-9e8e-eee30463f7de.png) <br> Translating sounds from the Eastern Languages: LRS3 -> LRS2 <br> But LRS3 has a lot of artifacts around the face. Use LRS2 |
 
+| Lightweight Result |
+| ------------------ |
+| ![image](https://user-images.githubusercontent.com/67234937/146108316-b6dd4488-67fe-4117-96c9-bbd92c8048c1.png) |
 
+### 2nd Mentoring Feedback
+* 3. Cloud Server Instance & Cost Problems <br> -> We must use CUDA, Need GPU Server. <br> So, Looking for a solution 
+
+| Cloud Server Instance & Cost |
+| ---------------------------- |
+| Trying to deploy the Cloud GPU Server <br> ![image](https://user-images.githubusercontent.com/67234937/146108582-b3e72af7-779c-4269-8676-9522c899a523.png) |
+| Very Expensive Server Cost -> Looking for a Solution <br> ![image](https://user-images.githubusercontent.com/67234937/146108658-b8a4072d-099e-4cbf-b19d-29ff881eb99a.png) |
 
 ***
 # 5. Progress
 
-* Focus Direction
-<table>
-<tr><th>Distinction</th><th>Effective</th></tr>
-<tr><td>DeepFake + Lip-synching</td><td>If a person who wants to remember has only <br>
- a picture and a voice left, the prospect is that <br>
-it can be provided as if he or she is speaking the voice.</td></tr>
-<tr><td>Existing <br>
--> cover only human face <br>
--> My image or base image requires mouth shape to move</td>
-<td>User can synthesize your own face and <br> say your own lines in the best scenes of the movie.
-</td></tr>
-</table>
+| Template (GIF 짤방) | Template (MP4) |
+| ------------------ | --------------- |
+| ![image](https://user-images.githubusercontent.com/67234937/146108862-acf415a9-259c-4b38-ae52-0fbd0e3d4d2f.png) | ![image](https://user-images.githubusercontent.com/67234937/146108889-eaca6387-6cf8-40a6-a930-7e2cd61a8e58.png) |
 
-* Application Screen
+| Flutter Demo |
+| ------------ |
+| ![image](https://user-images.githubusercontent.com/67234937/146108943-b79eecef-bef3-4146-8073-cf1de3172f45.png) |
+| ![image](https://user-images.githubusercontent.com/67234937/146108988-04478a20-4a2f-4e28-8e3e-3515ef2bf2df.png) |
+| ![image](https://user-images.githubusercontent.com/67234937/146109007-d1033b62-f127-4f9d-9da6-0129e35cda90.png) |
+| ![image](https://user-images.githubusercontent.com/67234937/146109024-6a0d5d86-03a6-4453-b58a-9f8cc5665a92.png) |
 
-| Screen | Description |
-| --- | ---- |
-|![18](https://user-images.githubusercontent.com/67234937/121983731-c2ca6a80-cdcc-11eb-9e82-1000824508d9.png) | [Home Screen]<br><br> Provides a list of application <br> self-recommended base images. <br><br> Home / Search / Settings Search can use <br> base images and search functions <br> divided by tags |
-|![19](https://user-images.githubusercontent.com/67234937/121983997-2e143c80-cdcd-11eb-84b0-08d5fe564cd4.png) | [Choice Fabrication Mode]<br><br> First screen available when <br> base image is selected.<br><br> Quick: fast time, low quality<br>Quality: slow time, high quality |
-|![20](https://user-images.githubusercontent.com/67234937/121984092-58fe9080-cdcd-11eb-8504-b60fea79366a.png) | [Voice Input]<br><br> Enter a voice for the <br> lip-syncing function. <br><br> Select files that have already <br> been recorded, Proceeding to a live<br> recording |
-|![21](https://user-images.githubusercontent.com/67234937/121984186-80555d80-cdcd-11eb-97d2-a8c4905f5177.png) | [Result]<br><br> Download and share <br><br> Using voice function -> mp4 <br> If not ->  gif or jpg |
+| Gif Template Demo |
+| ----------------- |
+| Source - ![image](https://user-images.githubusercontent.com/67234937/146109083-e55e437a-8cf0-4900-8977-138a89fd9b65.png) target - ![그림1](https://user-images.githubusercontent.com/67234937/146109210-5b15ffb9-9623-42a3-8eac-4c17d11e1d16.gif) = Result Gif file - ![ezgif com-gif-maker](https://user-images.githubusercontent.com/67234937/146109353-a72edd45-8c65-42ce-a038-72722eeadd25.gif) |
+
+| MP4 (Video) Template Demo |
+| ------------------------- |
+| Source - ![image](https://user-images.githubusercontent.com/67234937/146109479-9738f0dd-7f9c-4769-911c-66cd1eb660a5.png) + Source Voice File ![image](https://user-images.githubusercontent.com/67234937/146109518-6608991e-301d-4d0a-95b4-e11cb07186ec.png) <br> = Result MP4 file - https://user-images.githubusercontent.com/67234937/146109628-a4bffe50-59e5-4ec2-adb5-62d9ca995947.mp4 |
 
 ***
 # 6. Role and Plan
