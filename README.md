@@ -2,239 +2,191 @@
 ***
 
 * ### [Graduation Project Proposal(Youtube) - Re:Mind](https://youtu.be/V59beXzW11Y)
+* ### [Graduation Project Implementation(Youtube) - Re:Mind](https://youtu.be/JECVPx8Vpys)
 
 ***
 > Table Of Contents <br>
-> [1. Motivation](#1-motivation) <br>
-> [2. Key features](#2-key-features) <br>
+> [1. Motivation & Objective](#1-motivation) <br>
+> [2. Project Overview](#2-project-overview) <br>
 > [3. Technologies Used](#3-technologies-used)<br>
-> [4. Progress](#4-progress)<br>
-> [5. Development plan](#5-development-plan)<br>
+> [4. Implementation Detail](#4-implementation-detail)<br>
+> [5. Progress](#5-progress)<br>
 > [6. Role & Plan](#6-role-and-plan)<br>
 
 ***
 # 1. Motivation
 
-| IF ???           |                                                                                                           |
-|------------------|-----------------------------------------------------------------------------------------------------------|
-| I'M Actor        |![1](https://user-images.githubusercontent.com/67234937/121903590-6e3ed500-cd63-11eb-87e2-c8efdc664bc8.png)|
-| My Parents Alive |![2](https://user-images.githubusercontent.com/67234937/121904566-41d78880-cd64-11eb-9987-90c366aded0c.png)|
+| For Reminiscence | For Fun |
+| ---------------- | ------- |
+| [MBC 다큐멘터리 - 너를 만났다](https://www.youtube.com/watch?v=uflTK8c4w0c) <br> ![reminiscence](https://user-images.githubusercontent.com/67234937/146102612-84c809aa-ab8e-4eae-a202-78c0e40be855.PNG) | [나몰라 패밀리 - 일론머스크](https://www.youtube.com/watch?v=hIzuIuVY3XU) <br> ![fun](https://user-images.githubusercontent.com/67234937/146102538-0e4a337b-18c0-4e47-97ee-649ad0effd91.PNG)|
 
-* [MBC 다큐멘터리 - 너를 만났다](https://www.youtube.com/watch?v=uflTK8c4w0c)
-* ![3](https://user-images.githubusercontent.com/67234937/121905155-ce824680-cd64-11eb-8710-8691d96ed31d.png)
 * As technology advances, the possibilities of things that cannot be done in real life and <br>
 that can only be done in virtual reality are increasing and people's desires are also increasing. <br>
 From changing characters to creating facial expressions, how to add movement to a photo to make it lively <br>
 It can give us fun and meaningful memories to reminisce about loved ones.
 
-| For Fun | For Reminiscence |
-|------------------|-----------------------------------------------------------------------------------------------------------|
-| ![4](https://user-images.githubusercontent.com/67234937/121905650-5700e700-cd65-11eb-9aa8-09f547fd1b5a.png)|![5](https://user-images.githubusercontent.com/67234937/121905674-5ff1b880-cd65-11eb-81cf-eafc58f268a4.png) ![2](https://user-images.githubusercontent.com/67234937/121905811-7b5cc380-cd65-11eb-8550-8b5d12e2658a.png)|
 
 * Similar Apps
-> * Deepfake Studio
-> * ![7](https://user-images.githubusercontent.com/67234937/121906624-3edd9780-cd66-11eb-8484-279e5ede4f1d.png)
-> * Vlunerable to security
-> * Just face Swapping
-> * Inconvenient use
 
 > * Deep Nostalgia
 > * ![6](https://user-images.githubusercontent.com/67234937/121906666-4ac95980-cd66-11eb-9cf8-3b79d9cd8fd1.jpg)
 > * Not a Smartphone app
 > * Paid Service
 
-* ### Re:Mind
-* ![8](https://user-images.githubusercontent.com/67234937/121906887-83693300-cd66-11eb-8079-d0be0d8f5e04.png)
-* Smartphone App
-* Remind Person in memory
-* Make my own deep fake video
+> * Deepfake Studio
+> * ![7](https://user-images.githubusercontent.com/67234937/121906624-3edd9780-cd66-11eb-8484-279e5ede4f1d.png)
+> * Vlunerable to security
+> * Just face Swapping (Deepfake)
+> * Vulnerable to security
+
+> * Wav2Lip
+> * ![image](https://user-images.githubusercontent.com/67234937/146102703-4c993f9d-a41f-4c7c-81d9-d8c6ccdfd05c.png)
+> * Just Lip-Syncing (DeepVoice)
+> * Bad User Experience
+
+
+* ### Objective
+* DeepFake(Face Swap) + Lip-Syncing (+My Voice)
+* ![objective](https://user-images.githubusercontent.com/67234937/146103031-fa182c6a-93a5-45d1-a515-746e56e23209.PNG)
+* ![11](https://user-images.githubusercontent.com/67234937/121907856-6b45e380-cd67-11eb-9a7d-c037388c0a3c.png) ![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/67234937/121911056-5e76bf00-cd6a-11eb-8600-1712b0175562.gif) ![10](https://user-images.githubusercontent.com/67234937/121907196-cb885580-cd66-11eb-8655-793108bf9942.png)
+
+* Cross Platform Application (Web + Mobile)
+* ![image](https://user-images.githubusercontent.com/67234937/146103129-d687ae3f-a5f6-4b24-adf8-e51eb8f64da1.png)
+
 
 ***
-# 2. Key features
+# 2. Project Overview
 
-| DeepFake(Face Swap) +  Speech To Text(Lip Sync) |
-|----------------------------------------------|
-| ![9](https://user-images.githubusercontent.com/67234937/121907150-c0cdc080-cd66-11eb-98ae-7e89fca66dfa.jpg) ![10](https://user-images.githubusercontent.com/67234937/121907196-cb885580-cd66-11eb-8655-793108bf9942.png) |
-| ![11](https://user-images.githubusercontent.com/67234937/121907856-6b45e380-cd67-11eb-9a7d-c037388c0a3c.png) ![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/67234937/121911056-5e76bf00-cd6a-11eb-8600-1712b0175562.gif) |
+| | Key Features | 
+| ------------ | ----------------------------- |
+| ![image](https://user-images.githubusercontent.com/67234937/146103594-bdccf9f2-a624-449c-85c2-427e8ea5a608.png) | For fun & reminiscence <br><br> DeepFake (FaceSwap) + Lip Syncing <br><br> Cross Platform App (Windows, Mac, Android) <br><br> Easy To Use <br><br> Better UI/UX <br><br> Training One-shot (Picture) <br><br> High Quality + Done Quickly <br><br> Various templates |
 
-| Hard to Use + You need to install the program |
-| ------------------------------------------------|
-| <img width="353" alt="faceSwap" src="https://user-images.githubusercontent.com/67234937/121908248-c546a900-cd67-11eb-96d3-e13994ccb599.PNG"> <img width="332" alt="deepfacelab" src="https://user-images.githubusercontent.com/67234937/121908479-02ab3680-cd68-11eb-90db-74504c13aadd.PNG"> <img width="325" alt="libsync" src="https://user-images.githubusercontent.com/67234937/121908598-1f476e80-cd68-11eb-83ea-30c1ca3b0e25.png"> |
-| ![13](https://user-images.githubusercontent.com/67234937/121908668-2cfcf400-cd68-11eb-8525-e0a64ef40cdb.png) |
+| Divide into two tracks |
+| ---------------------- |
+| 1. Gif File (3 ~ 4 Seconds) + No Voice file <br> ![image](https://user-images.githubusercontent.com/67234937/146105153-c384efe7-1c62-49d9-aec2-9da4d98493f1.png) |
+| 2. MP4 file (30~60 Seconds) + Voice file <br> ![image](https://user-images.githubusercontent.com/67234937/146105203-0ce68a35-4b91-4922-87a5-e6f4f9742471.png) |
 
-| Do you want Quality? or Time? |
-| ----------------------------- |
-| ![ezgif com-gif-maker](https://user-images.githubusercontent.com/67234937/121912528-9f230800-cd6b-11eb-8a77-96dc51d1022b.jpg) |
+* Sequence Diagram <br> ![image](https://user-images.githubusercontent.com/67234937/146105242-c19ec3b3-878e-4f73-b4e4-488f444c9f5f.png)
+* Usecase Diagram <br> ![image](https://user-images.githubusercontent.com/67234937/146105291-4570f9cd-2a40-4ab6-9daa-bb35e4d890a4.png)
 
-* ### Re:Mind
-* Easy to Use
-* DeepFake + Speech To Text(Lip Sync)
-* High Quality + Done Quickly Or <br>
-Low Quality + Done Slowly
+### Structure
+![image](https://user-images.githubusercontent.com/67234937/146105333-a7c79e6d-f946-42bf-9c28-fa88b0735ddc.png)
 
 ***
 # 3. Technologies used
 
-* [Deep Fake(Face Swap)](https://en.wikipedia.org/wiki/Deepfake)
-* A deep learning – based technique able to create fake images/videos.
-* Swapping the face of a person in an image or video by the face of another person.
-* To create an image or video, it has to go through 3 processes.
-* A. Extraction -> B. Training -> C. Converting
-<br>
+| Model |
+| ----- |
+| ![image](https://user-images.githubusercontent.com/67234937/146105492-b22a91f0-1bcb-43c0-87a1-4e49429cfdb2.png) |
+| Requirements - Training Time, Convenience |
 
-* A. Extraction
+| Model - Deep Fake [(Reference.SimSwap)](https://github.com/neuralchen/SimSwap) |
+| ------------------------------------- |
+| ![image](https://user-images.githubusercontent.com/67234937/146105617-e7dbd0c2-4629-42a3-8366-8797fca0acf9.png) |
+| ![image](https://user-images.githubusercontent.com/67234937/146105645-ee015349-e2f3-4c96-ad57-f042ac3787cb.png) <br> Overcome the defects in generalization and attribute preservation <br> Generalization to Arbitrary Identify   +   Preserving the Attributes of the Target | 
+| Image To Gif <br> ![image](https://user-images.githubusercontent.com/67234937/146105849-aefaa960-daa8-49b7-b5d6-f99776056886.png) | 
 
-| To generate a set of faces, and optionally <br> on alignments file and mask, for training. <br><br> To generate an alignments file and <br> mask for converting your final frames. |
-| ---------------------------------------------------- |
-| ![23](https://user-images.githubusercontent.com/67234937/121984519-12f5fc80-cdce-11eb-98b8-95d2b753491d.png) ![22](https://user-images.githubusercontent.com/67234937/121984564-2903bd00-cdce-11eb-8c6a-27f5da667433.png) |
-<br>
+| Model - Lip Syncing [(Reference.Wav2lip)](https://github.com/Rudrabha/Wav2Lip) |
+| --------------------------------------- |
+| ![image](https://user-images.githubusercontent.com/67234937/146105906-d539f4c8-25fb-43b0-be61-cc0256b83c5a.png) <br> Extraction -> Training -> Converting | 
+| Image + Voice To MP4 <br> ![image](https://user-images.githubusercontent.com/67234937/146105994-fa57ec8c-56c6-450e-9d83-3b438e482545.png) |
 
-* B. Training
-* ![24](https://user-images.githubusercontent.com/67234937/121984928-d080ef80-cdce-11eb-843f-eb193c802413.png)
-* Few-Shot - 3 ~ 5 images, Multi-shot - 2000 > images
+| Model - Voice Extraction [(Reference.Spleeter)](https://github.com/deezer/spleeter) |
+| --------------------------------------------- |
+| ![image](https://user-images.githubusercontent.com/67234937/146106122-93256bce-411b-480b-8b20-0e80433b5550.png) <br> Extract only voice from mp3, mp4 or wav file -> Better Quality !! |
 
-* B. Training(Few-Shot)
-* ![25](https://user-images.githubusercontent.com/67234937/121985241-5a30bd00-cdcf-11eb-817f-ffd88b9382e7.png)
-* [FUNIT(Few-Shot Unsupervised Image-to-Image Translation)](https://github.com/NVlabs/FUNIT)
-* In the case of a Few shot, you need to create a dataset first because there are few datasets. <br> 
-So, we are considering two approaches in this section. First up is Funit. <br>
-With just a few example images during testing, Funit can create photos of various <br>
-expressions and angles with technology applied to the target layer that has never been seen before. <br>
-It has the advantage of being fast, but it is an algorithm that was originally applied to animals, <br> 
-so the result is a bit disappointing for humans. <br>
-
-* ![26](https://user-images.githubusercontent.com/67234937/121985447-b562af80-cdcf-11eb-904c-9eee171cf308.png)
-* [StyleGAN(A Style-Based Generator Architecture for GANs](https://www.youtube.com/watch?v=eaW_P85wQ9k)
-* The second method is the method using styleGAN. <br>
-StyleGAN sees the image as a combination of styles, and synthesizes the image <br>
-by applying style information to each layer of the generator.<br>
-At this time, the style added in each layer can control different levels of visual attributes <br>
-from coarse features (gender, pose, etc.) of the image to fine details (hair color, skin tone, etc.). <br>
-Using this styleGAN, it is possible to generate photos of various angles and expressions through the learned 3D architecture. <br>
-In the case of styleGAN, it produces very stable and high-quality images, but the time is a bit slow. <br>
-So, we decided to decide one of the two methods through the consumer requirement research and development process. <br>
-
-* ![27](https://user-images.githubusercontent.com/67234937/121985620-0ffc0b80-cdd0-11eb-89c5-32908cd03292.png)
-* [AdaIN (Adaptive Instance Normalization)](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=tlqordl89&logNo=221536378926)
-* AdaIN is a normalization method for style conversion, and when you input a content image and a style image, <br>
-the content image is changed to the style of the style image.<br>
-Therefore, we can change the semantic map of the face extracted earlier to the face of the person we want to change, <br>
-that is, the style of the photorealistic. <br>
-
-* ![28](https://user-images.githubusercontent.com/67234937/121985741-52254d00-cdd0-11eb-8517-03eff2efe592.png)
-* [SPADE (Spatially-Adaptive Normalization)](https://github.com/NVlabs/SPADE)
-* However, it cannot be said that it is a perfect live-action painting <br> 
-because the style of painting remains with the result of Adain alone. So what we're going to use here is SPADE. <br>
-The conv process (conv → normalize → activation) is commonly used in the image-to-image translation process. <br>
-In this case, the normalization layer has the disadvantage of “losing” the information of the input image. <br>
-However, in SPADE, element-wise affine transformation operation proceeds <br>
-through the form of a tensor, not through the average variance value in the semantic image. <br>
-This allows you to change the style while maximizing the information in the semantic image. <br>
-Through this SPADE, photo-realization processing will take place. <br>
-
-* ![29](https://user-images.githubusercontent.com/67234937/121985922-a03a5080-cdd0-11eb-8981-c39d0e5c5468.png)
-* Few-Shot -> FUNIT or StylerGAN + AdaIN + SPADE
-<br>
-
-* B. Training - Multi-Shot
-* ![30](https://user-images.githubusercontent.com/67234937/121986055-dbd51a80-cdd0-11eb-8c8d-97da892ac2b1.png) + ![31](https://user-images.githubusercontent.com/67234937/121986075-e2639200-cdd0-11eb-86d9-0e160202cf65.png)
-* [AutoEncoder – For troubleshooting](https://en.wikipedia.org/wiki/Autoencoder)
-* Training in multi-shot <br>
-Image training will be done using autoencoders based on Keras and TensorFlow. <br>
-In general, the autoencoder is used to convert the original data into compressed information through the encoder, <br>
-and then go through the decoder to restore the original image.<br><br>
-But here the encoder part of A and B will be shared. Therefore, similar features can be learned from two photos, <br>
-and a latent layer can be visualized that only visualizes these features, such as the outline <br>
-of the body excluding the identity, and the location of the eyes, nose and mouth. <br>
-Through this process, you can learn the identity of features such as <br>
-eye shape and nose size through learning in the decoder part.<br>
-
-* ![32](https://user-images.githubusercontent.com/67234937/121986377-5aca5300-cdd1-11eb-975b-691f226a23b8.png)
-* [GAN (Generative adversarial networks)](https://en.wikipedia.org/wiki/Generative_adversarial_network)
-* Through these autoencoders, we will form a generative network of GANs to drive the results.
-<br>
-
-* C. Converting
-* ![33](https://user-images.githubusercontent.com/67234937/121986495-8f3e0f00-cdd1-11eb-8f97-1c3cdfdf3496.png) ->
-* ![34](https://user-images.githubusercontent.com/67234937/121986513-96651d00-cdd1-11eb-905f-acdcd7e60b85.png) ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/67234937/121986729-04a9df80-cdd2-11eb-8197-cf6bd55f56e7.gif)
-<br>
-
-* [Speech-to-Lip Sync](https://github.com/Rudrabha/LipGAN)
-* A deep learning – based technique able to change the sound to lib sync.
-* Technology that converts acoustic speech signals obtained through sound sensors such as voice recordings and microphones into lib sync.
-* In order to achieve recognized results, it has to go through 3 processes.
-* A. Extraction -> B. Tranining -> C. Converting
-<br>
-
-* A. Extraction
-* The extraction of the intonation, voice size, etc. of a voice signal in numerical form is called a characteristic vector.
-* SST use characteristic vectors to generate criteria to determine the meaning of voice signals.
-<br>
-
-* B. Training
-* ![35](https://user-images.githubusercontent.com/67234937/121987047-a16c7d00-cdd2-11eb-967f-d40ab82a31d8.png)
-* In this way, we encode the voice signal, and in the case of the face encoder, <br>
-we proceed with the encoding through face recognition as described earlier in face swap. <br>
-It then decodes using both encoders, compares the result with the speech encoder, calculates and adjusts the sync. <br>
-<br>
-
-* C. Converting
-* Audio -> ![36](https://user-images.githubusercontent.com/67234937/121987122-ca8d0d80-cdd2-11eb-945b-0780b9c66a3d.jpg) -> ![1](https://user-images.githubusercontent.com/67234937/121987151-d973c000-cdd2-11eb-999e-54e68750d1ab.gif) ![2](https://user-images.githubusercontent.com/67234937/121987158-ded10a80-cdd2-11eb-8b01-5af1c7083260.gif) ![3](https://user-images.githubusercontent.com/67234937/121987172-e690af00-cdd2-11eb-9236-04e361ccc2d6.gif) 
-* ![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/67234937/121988044-a6323080-cdd4-11eb-855b-8871eb8fa7f6.gif)
-<br>
-
-* Framework
-
-| Modeling  | Mobile Implementation + Server | Version Control |
-|---------|------------------------------|---------------|
-| PyCharm + TensorFlow, Keras | Android Studio + AWS, Firebase | Github |
-
+| Cross Platform Application (Flask + Flutter) |
+| -------------------------------------------- |
+| ![image](https://user-images.githubusercontent.com/67234937/146106245-a0371f98-e172-4ecc-baa5-410f9bc6c475.png) <br> Python Application & Cross Platform |
 
 ***
-# 4. Progress
+# 4. Implementation Detail
 
-| Sequence diagram | Usecase diagram |
-|----------------- |-----------------|
-| ![14](https://user-images.githubusercontent.com/67234937/121909576-04c1c500-cd69-11eb-9228-c1f63aee7716.png) | ![15](https://user-images.githubusercontent.com/67234937/121909608-0d1a0000-cd69-11eb-9834-e3da05537157.png) |
+* Model - Python Library
+* Deepfake (SimSwap) - Insightface, torch, torchVision, Cuda, cv2, tensorflow
+* Lip-Syncing (Wav2lip) - Opencv, torch, torchVision, Cuda, librosa, tensorflow
+* Voice Extraction (Spleeter) - tensorflow, ffmpeg-python, norbert, librosa, typer
 
-* Agile Development
-* ![16](https://user-images.githubusercontent.com/67234937/121910012-70a42d80-cd69-11eb-84fd-e03da2a3d153.png)
+| Model - Deep Fake [(Reference.SimSwap)](https://github.com/neuralchen/SimSwap) |
+| ------------------------------------- |
+| 1. Set Image Size <br> ![image](https://user-images.githubusercontent.com/67234937/146106901-51add445-9d8b-426f-824c-ec1b724461c7.png) <br> 2. Set Option (Weights) <br> ![image](https://user-images.githubusercontent.com/67234937/146106942-909f9f9a-c086-4423-be69-f834027efa89.png) <br> 3. Convert (Main) <br> ![image](https://user-images.githubusercontent.com/67234937/146107000-31abe34f-fe7e-43de-919f-3325e053fce5.png) |
+
+| Model - Lip Syncing [(Reference.Wav2lip)](https://github.com/Rudrabha/Wav2Lip) |
+| --------------------------------------- |
+| 1. Data Parse <br> ![image](https://user-images.githubusercontent.com/67234937/146107092-6749e34e-2226-406f-bf88-8501e91f064c.png) <br> 2. Face Detect <br> ![image](https://user-images.githubusercontent.com/67234937/146107118-de057a90-ba69-4fd2-8c04-0182208b607a.png) <br> 3. Data Generation <br> ![image](https://user-images.githubusercontent.com/67234937/146107158-64fc20cd-d5bf-469a-858c-91ae9f76effa.png) <br> 4. Load Model & Weights <br> ![image](https://user-images.githubusercontent.com/67234937/146107183-5b358b3e-894a-4e4b-8a81-41fd9bca1a37.png) <br> 5. Main <br> ![image](https://user-images.githubusercontent.com/67234937/146107230-2a4cf0c0-38be-4256-8a01-a566594f3a9c.png) |
+
+| Model - Voice Extraction [(Reference.Spleeter)](https://github.com/deezer/spleeter) |
+| --------------------------------------------- |
+| Main (In Lip-Syncing) <br> ![image](https://user-images.githubusercontent.com/67234937/146107290-7f0ce79d-f0e2-4e15-a414-9042ba8fedaf.png) |
+
+| Flask (Backend) |
+| --------------- |
+| 1. Gif transformation <br> ![image](https://user-images.githubusercontent.com/67234937/146107384-8283c5ad-6ad2-42c5-849c-c6c038936f59.png) <br> 2. MP4 transformation <br> ![image](https://user-images.githubusercontent.com/67234937/146107419-561deab3-0bca-4944-8448-d86198fbcac1.png) |
+
+| Flutter (Frontend) |
+| ------------------ |
+| Modeling -> Return the Result <br> ![image](https://user-images.githubusercontent.com/67234937/146107497-37d72bf4-912c-437a-af0c-b2d012129540.png) |
+
+### 1st Mentoring Feedback
+* 1. Processing speed, model capacity problem <br> -> Lightweight model
+* 2. Wav2lip model is a model tailored to English <br> -> Since the expected user is Korean, <br> training after changing the dataset.
+
+| Lightweight model |
+| ----------------- |
+| To shorten the learning time, The training file is built in advance <br> ![image](https://user-images.githubusercontent.com/67234937/146107787-76010f38-2b68-48d8-9c83-7e173096a9a4.png) |
+| Lightweight - Deepfake |
+| Parameter was changed in consideration of Running Time & Quality <br> ![image](https://user-images.githubusercontent.com/67234937/146107928-c2f58c2d-0823-4df5-96aa-ac3f47ff04ca.png) <br> 
+| Lightweight - Lip-Syncing |
+| Parameter was changed in consideration of Eval model's sync, train loss & fps <br> ![image](https://user-images.githubusercontent.com/67234937/146108047-3d025414-49bc-434b-905a-e252e9f58075.png) <br> ![image](https://user-images.githubusercontent.com/67234937/146108060-321d00f5-36cb-42ac-a440-f9d5b3cfeab4.png) |
+
+| Changing weight dataset |
+| ----------------------- |
+| Compare them according to the environment of each datset (LRW, LRS2, LRS3) <br> ![image](https://user-images.githubusercontent.com/67234937/146108188-f2d17696-d33e-45c7-9e8e-eee30463f7de.png) <br> Translating sounds from the Eastern Languages: LRS3 -> LRS2 <br> But LRS3 has a lot of artifacts around the face. Use LRS2 |
+
+| Lightweight Result |
+| ------------------ |
+| ![image](https://user-images.githubusercontent.com/67234937/146108316-b6dd4488-67fe-4117-96c9-bbd92c8048c1.png) |
+
+### 2nd Mentoring Feedback
+* 3. Cloud Server Instance & Cost Problems <br> -> We must use CUDA, Need GPU Server. <br> So, Looking for a solution 
+
+| Cloud Server Instance & Cost |
+| ---------------------------- |
+| Trying to deploy the Cloud GPU Server <br> ![image](https://user-images.githubusercontent.com/67234937/146108582-b3e72af7-779c-4269-8676-9522c899a523.png) |
+| Very Expensive Server Cost -> Looking for a Solution <br> ![image](https://user-images.githubusercontent.com/67234937/146108658-b8a4072d-099e-4cbf-b19d-29ff881eb99a.png) |
 
 ***
-# 5. Development Plan
+# 5. Progress
 
-* Focus Direction
-<table>
-<tr><th>Distinction</th><th>Effective</th></tr>
-<tr><td>DeepFake + Lip-synching</td><td>If a person who wants to remember has only <br>
- a picture and a voice left, the prospect is that <br>
-it can be provided as if he or she is speaking the voice.</td></tr>
-<tr><td>Existing <br>
--> cover only human face <br>
--> My image or base image requires mouth shape to move</td>
-<td>User can synthesize your own face and <br> say your own lines in the best scenes of the movie.
-</td></tr>
-</table>
+| Template (GIF 짤방) | Template (MP4) |
+| ------------------ | --------------- |
+| ![image](https://user-images.githubusercontent.com/67234937/146108862-acf415a9-259c-4b38-ae52-0fbd0e3d4d2f.png) | ![image](https://user-images.githubusercontent.com/67234937/146108889-eaca6387-6cf8-40a6-a930-7e2cd61a8e58.png) |
 
-* Application Screen
+| Flutter Demo |
+| ------------ |
+| ![image](https://user-images.githubusercontent.com/67234937/146108943-b79eecef-bef3-4146-8073-cf1de3172f45.png) |
+| ![image](https://user-images.githubusercontent.com/67234937/146108988-04478a20-4a2f-4e28-8e3e-3515ef2bf2df.png) |
+| ![image](https://user-images.githubusercontent.com/67234937/146109007-d1033b62-f127-4f9d-9da6-0129e35cda90.png) |
+| ![image](https://user-images.githubusercontent.com/67234937/146109024-6a0d5d86-03a6-4453-b58a-9f8cc5665a92.png) |
 
-| Screen | Description |
-| --- | ---- |
-|![18](https://user-images.githubusercontent.com/67234937/121983731-c2ca6a80-cdcc-11eb-9e82-1000824508d9.png) | [Home Screen]<br><br> Provides a list of application <br> self-recommended base images. <br><br> Home / Search / Settings Search can use <br> base images and search functions <br> divided by tags |
-|![19](https://user-images.githubusercontent.com/67234937/121983997-2e143c80-cdcd-11eb-84b0-08d5fe564cd4.png) | [Choice Fabrication Mode]<br><br> First screen available when <br> base image is selected.<br><br> Quick: fast time, low quality<br>Quality: slow time, high quality |
-|![20](https://user-images.githubusercontent.com/67234937/121984092-58fe9080-cdcd-11eb-8504-b60fea79366a.png) | [Voice Input]<br><br> Enter a voice for the <br> lip-syncing function. <br><br> Select files that have already <br> been recorded, Proceeding to a live<br> recording |
-|![21](https://user-images.githubusercontent.com/67234937/121984186-80555d80-cdcd-11eb-97d2-a8c4905f5177.png) | [Result]<br><br> Download and share <br><br> Using voice function -> mp4 <br> If not ->  gif or jpg |
+| Gif Template Demo |
+| ----------------- |
+| Source - ![image](https://user-images.githubusercontent.com/67234937/146109083-e55e437a-8cf0-4900-8977-138a89fd9b65.png) target - ![그림1](https://user-images.githubusercontent.com/67234937/146109210-5b15ffb9-9623-42a3-8eac-4c17d11e1d16.gif) = Result Gif file - ![ezgif com-gif-maker](https://user-images.githubusercontent.com/67234937/146109353-a72edd45-8c65-42ce-a038-72722eeadd25.gif) |
+
+| MP4 (Video) Template Demo |
+| ------------------------- |
+| Source - ![image](https://user-images.githubusercontent.com/67234937/146109479-9738f0dd-7f9c-4769-911c-66cd1eb660a5.png) + Source Voice File ![image](https://user-images.githubusercontent.com/67234937/146109518-6608991e-301d-4d0a-95b4-e11cb07186ec.png) <br> = Result MP4 file - https://user-images.githubusercontent.com/67234937/146109628-a4bffe50-59e5-4ec2-adb5-62d9ca995947.mp4 |
 
 ***
 # 6. Role and Plan
 * Plan
-* <img width="600" alt="17" src="https://user-images.githubusercontent.com/67234937/121911176-7ea67e00-cd6a-11eb-8d9d-544f76e1bf19.PNG">
+* ![plan](https://user-images.githubusercontent.com/67234937/146101634-fbb26b30-3a7d-46a8-a67a-9d8bf08652e4.PNG)
 
 * Role
 
 <table>
-<tr> <td>심우석(201636417)</td> <td>DeepFake Research, GAN, SPADE, AdaIN, Tensorflow, Keras Study</td> </tr>
-<tr> <td>오찬희(201735855)</td> <td>DeepFake Research, GAN, SPADE, AdaIN, Tensorflow, Keras Study</td> </tr>
-<tr> <td>김다혜(201835414)</td> <td>Speech To text Research, Server Study</td> </tr>
-<tr> <td>선다혜(201835466)</td> <td>Speech To text Research, Development Environment Study</td> </tr>
+<tr> <td>심우석(201636417)</td> <td>Model Lightweight, Server</td> </tr>
+<tr> <td>오찬희(201735855)</td> <td>Model Lightweight, Modeling</td> </tr>
+<tr> <td>김다혜(201835414)</td> <td>Modeling, Flutter</td> </tr>
+<tr> <td>선다혜(201835466)</td> <td>Modeling, Flutter</td> </tr>
 </table>
