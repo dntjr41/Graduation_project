@@ -3,6 +3,8 @@
 
 * ### [Graduation Project Proposal(Youtube) - Re:Mind](https://youtu.be/V59beXzW11Y)
 * ### [Graduation Project Implementation(Youtube) - Re:Mind](https://youtu.be/JECVPx8Vpys)
+* ### [Graduation Project Faceswap Demo(Youtube) - Re:Mind](https://youtu.be/Powcvba2DL8)
+* ### [Graduation Project Faceswap + Wav2Lip Demo(Youtube) - Re:Mind](https://youtu.be/Powcvba2DL8)
 
 ***
 > Table Of Contents <br>
@@ -117,15 +119,16 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 
 | Model - Voice Extraction [(Reference.Spleeter)](https://github.com/deezer/spleeter) |
 | --------------------------------------------- |
-| Main (In Lip-Syncing) <br> ![image](https://user-images.githubusercontent.com/67234937/146107290-7f0ce79d-f0e2-4e15-a414-9042ba8fedaf.png) |
+| Main (In Lip-Syncing) <br> ![image](https://user-images.githubusercontent.com/77625823/171043328-f360821b-2bd8-4ad9-89b6-caa55fef2e0b.png) |
 
 | Flask (Backend) |
 | --------------- |
-| 1. Gif transformation <br> ![image](https://user-images.githubusercontent.com/67234937/146107384-8283c5ad-6ad2-42c5-849c-c6c038936f59.png) <br> 2. MP4 transformation <br> ![image](https://user-images.githubusercontent.com/67234937/146107419-561deab3-0bca-4944-8448-d86198fbcac1.png) |
+| 1. Gif transformation <br> ![image](https://user-images.githubusercontent.com/77625823/171043511-d0048e22-f3fb-42a0-bb0a-375a5e5987d0.png) <br> 2. MP4 transformation <br> ![image](https://user-images.githubusercontent.com/77625823/171043785-ce353923-f173-4aa4-8b66-10af79080ca4.png) |
 
 | Flutter (Frontend) |
 | ------------------ |
-| Modeling -> Return the Result <br> ![image](https://user-images.githubusercontent.com/67234937/146107497-37d72bf4-912c-437a-af0c-b2d012129540.png) |
+| Modeling -> Return the Result <br> ![image](https://user-images.githubusercontent.com/77625823/171043953-d5896fb2-4466-4165-b8d6-d433dfc30065.png)![image](https://user-images.githubusercontent.com/77625823/171043995-c54d609f-ef07-4308-8923-a2cef0a6c21e.png)
+ |
 
 ### 1st Mentoring Feedback
 * 1. Processing speed, model capacity problem <br> -> Lightweight model
