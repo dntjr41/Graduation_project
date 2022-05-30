@@ -1,17 +1,20 @@
 from os import listdir, path
 import numpy as np
-import scipy, cv2, os, sys, argparse, audio
+import scipy, cv2, os, sys, argparse
 import json, subprocess, random, string
 from tqdm import tqdm
 from glob import glob
-import torch, face_detection
-from models import Wav2Lip
+import torch
+from . import audio, face_detection
+
+from .models import Wav2Lip
 import platform
 
 parser = argparse.ArgumentParser(description='Inference code to lip-sync videos in the wild using Wav2Lip models')
 
 parser.add_argument('--checkpoint_path', type=str,
-					help='Name of saved checkpoint to load weights from', required=False)
+					help='Name of saved checkpoint to load weights from',
+					default='D:\SimSwap\SimSwap\Wav2Lip\checkpoints\wav2lip_gan.pth', required=False)
 parser.add_argument('--face', type=str,
 					help='Filepath of video/image that contains faces to use',
 					default= 'D:/SimSwap/SimSwap/output/demo.mp4', required=False)
@@ -254,7 +257,7 @@ def main():
 			print ("Model loaded")
 
 			frame_h, frame_w = full_frames[0].shape[:-1]
-			out = cv2.VideoWriter('temp/result.avi', 
+			out = cv2.VideoWriter('Wav2Lip/temp/result.avi',
 									cv2.VideoWriter_fourcc(*'DIVX'), fps, (frame_w, frame_h))
 
 		img_batch = torch.FloatTensor(np.transpose(img_batch, (0, 3, 1, 2))).to(device)
@@ -274,7 +277,7 @@ def main():
 
 	out.release()
 
-	command = 'ffmpeg -y -i {} -i {} -strict -2 -q:v 1 {}'.format(args.audio, 'temp/result.avi', args.outfile)
+	command = 'ffmpeg -y -i {} -i {} -strict -2 -q:v 1 {}'.format(args.audio, 'Wav2Lip/temp/result.avi', args.outfile)
 	subprocess.call(command, shell=platform.system() != 'Windows')
 
 if __name__ == '__main__':
@@ -360,7 +363,7 @@ def convert(video_path, audio_path):
 				print("Model loaded")
 
 				frame_h, frame_w = full_frames[0].shape[:-1]
-				out = cv2.VideoWriter('temp/result.avi',
+				out = cv2.VideoWriter('Wav2Lip/temp/result.avi',
 									  cv2.VideoWriter_fourcc(*'DIVX'), fps, (frame_w, frame_h))
 
 			img_batch = torch.FloatTensor(np.transpose(img_batch, (0, 3, 1, 2))).to(device)
@@ -380,5 +383,5 @@ def convert(video_path, audio_path):
 
 		out.release()
 
-		command = 'ffmpeg -y -i {} -i {} -strict -2 -q:v 1 {}'.format(args.audio, 'temp/result.avi', args.outfile)
+		command = 'ffmpeg -y -i {} -i {} -strict -2 -q:v 1 {}'.format(audio_path, 'Wav2Lip/temp/result.avi', args.outfile)
 		subprocess.call(command, shell=platform.system() != 'Windows')

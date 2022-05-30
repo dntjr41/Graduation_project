@@ -38,9 +38,11 @@ opt.initialize()
 opt.parser.add_argument('-f') ## dummy arg to avoid bug
 opt = opt.parse()
 opt.pic_a_path = './demo_file/Iron_man.jpg' ## or replace it with image from your own google drive
-opt.video_path = './demo_file/video1.gif' ## or replace it with video from your own google drive
-opt.video_path = './demo_file/video2.gif' ## or replace it with video from your own google drive
-opt.output_path = './output/demo.mp4'
+opt.video_path = './demo_file/mp1.mp4' ## or replace it with video from your own google drive
+opt.video_path0 = './demo_file/video.gif'
+
+# opt.output_path = './output/demo.mp4'
+opt.output_path = 'D:/Unity Project/Unity-Study/Flutter/assets/demo.mp4'
 opt.temp_path = './tmp'
 opt.Arc_path = './arcface_model/arcface_checkpoint.tar'
 opt.isTrain = False
@@ -79,11 +81,10 @@ def convert(image, templete):
         latend_id = latend_id/np.linalg.norm(latend_id,axis=1,keepdims=True)
         latend_id = latend_id.to('cuda')
 
-        if(templete ==1):
-            opt.video_path = opt.video.path1
-        elif(templete == 2):
-            opt.video_path = opt.video.path2
-
+        if(templete <= 34):
+            opt.video_path = './demo_file/video' + str(templete - 1) + '.gif'
+        if(templete > 34):
+            opt.video_path = './demo_file/mp' + str(templete - 34) + '.mp4'
         video_swap(opt.video_path, latend_id, model, app, opt.output_path, temp_results_dir=opt.temp_path, use_mask=opt.use_mask)
 
 
