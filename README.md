@@ -4,7 +4,7 @@
 * ### [Graduation Project Proposal(Youtube) - Re:Mind](https://youtu.be/V59beXzW11Y)
 * ### [Graduation Project Implementation(Youtube) - Re:Mind](https://youtu.be/JECVPx8Vpys)
 * ### [Graduation Project Faceswap Demo(Youtube) - Re:Mind](https://youtu.be/Powcvba2DL8)
-* ### [Graduation Project Faceswap + Wav2Lip Demo(Youtube) - Re:Mind](https://youtu.be/Powcvba2DL8)
+* ### [Graduation Project Faceswap + Wav2Lip Demo(Youtube) - Re:Mind](https://youtu.be/39xPC3CapwU)
 
 ***
 > Table Of Contents <br>
