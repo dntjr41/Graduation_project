@@ -7,6 +7,21 @@
 * ### [Graduation Project Faceswap + Wav2Lip Demo(Youtube) - Re:Mind](https://youtu.be/39xPC3CapwU)
 
 ***
+### Dependencies
+* python3.6+
+* pytorch1.5+
+* torchvision
+* opencv
+* pillow
+* numpy
+* imageio
+* moviepy
+* insightface
+* librosa
+* tqdm
+* numba
+* spleeter
+***
 > Table Of Contents <br>
 > [1. Motivation & Objective](#1-motivation) <br>
 > [2. Project Overview](#2-project-overview) <br>
@@ -163,7 +178,7 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 
 | Template (GIF 짤방) | Template (MP4) |
 | ------------------ | --------------- |
-| ![image](https://user-images.githubusercontent.com/67234937/146108862-acf415a9-259c-4b38-ae52-0fbd0e3d4d2f.png) | ![image](https://user-images.githubusercontent.com/67234937/146108889-eaca6387-6cf8-40a6-a930-7e2cd61a8e58.png) |
+| ![gif_tem](https://user-images.githubusercontent.com/77625823/171157362-b704cdd6-73f2-4860-8ad6-2dc2155eee0c.png)| ![mp4_tem](https://user-images.githubusercontent.com/77625823/171157384-c8425f09-8700-452d-98ad-f35915eda681.png)|
 
 | Flutter Demo |
 | ------------ |
