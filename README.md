@@ -173,14 +173,19 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 | Gif Template Demo |
 | ----------------- |
 | Source - ![image](https://user-images.githubusercontent.com/67234937/146109083-e55e437a-8cf0-4900-8977-138a89fd9b65.png) target - ![그림1](https://user-images.githubusercontent.com/67234937/146109210-5b15ffb9-9623-42a3-8eac-4c17d11e1d16.gif) = Result Gif file - ![ezgif com-gif-maker](https://user-images.githubusercontent.com/67234937/146109353-a72edd45-8c65-42ce-a038-72722eeadd25.gif) |
-Select template - ![flutter1_1](https://user-images.githubusercontent.com/77625823/171152458-93341d08-e67c-4bde-9f41-bbe87d536a10.gif)
-Flask model running - ![flutter1_3](https://user-images.githubusercontent.com/77625823/171152573-64e1dbd8-45df-4274-96c4-f91c3cad2635.gif)
-Result - ![flutter1_2](https://user-images.githubusercontent.com/77625823/171152636-8ba2fc21-4414-40dc-81ba-bd6084296881.gif)
+
+| Select template | Flask model running | Result |
+| ------------------ | --------------- | --------------- |
+|![flutter1_1](https://user-images.githubusercontent.com/77625823/171152458-93341d08-e67c-4bde-9f41-bbe87d536a10.gif)| ![flutter1_3](https://user-images.githubusercontent.com/77625823/171152573-64e1dbd8-45df-4274-96c4-f91c3cad2635.gif)| ![flutter1_2](https://user-images.githubusercontent.com/77625823/171152636-8ba2fc21-4414-40dc-81ba-bd6084296881.gif)|
 
 
 | MP4 (Video) Template Demo |
 | ------------------------- |
 | Source - ![image](https://user-images.githubusercontent.com/67234937/146109479-9738f0dd-7f9c-4769-911c-66cd1eb660a5.png) + Source Voice File ![image](https://user-images.githubusercontent.com/67234937/146109518-6608991e-301d-4d0a-95b4-e11cb07186ec.png) <br> = Result MP4 file - https://user-images.githubusercontent.com/67234937/146109628-a4bffe50-59e5-4ec2-adb5-62d9ca995947.mp4 |
+
+| Select template | Flask model running | Result |
+| ------------------ | --------------- | --------------- |
+|![flutter1](https://user-images.githubusercontent.com/77625823/171154865-436372fc-858d-4e54-8c79-c2ebb60db2c0.gif) | (Simswap)![flutter3](https://user-images.githubusercontent.com/77625823/171154936-50e27e33-e287-4d97-a68b-0fa7181c17c3.gif) (Wav2Lip)![flutter4](https://user-images.githubusercontent.com/77625823/171155009-1a3c56f1-28fe-4fd6-afb6-3fbde813c643.gif) | ![flutter2](https://user-images.githubusercontent.com/77625823/171155090-f18ace8a-d25b-4894-bea7-429dcd0a8b5f.gif)|
 
 ***
 # 6. Role and Plan
