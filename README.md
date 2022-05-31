@@ -167,14 +167,16 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 
 | Flutter Demo |
 | ------------ |
-| ![image](https://user-images.githubusercontent.com/67234937/146108943-b79eecef-bef3-4146-8073-cf1de3172f45.png) |
-| ![image](https://user-images.githubusercontent.com/67234937/146108988-04478a20-4a2f-4e28-8e3e-3515ef2bf2df.png) |
-| ![image](https://user-images.githubusercontent.com/67234937/146109007-d1033b62-f127-4f9d-9da6-0129e35cda90.png) |
-| ![image](https://user-images.githubusercontent.com/67234937/146109024-6a0d5d86-03a6-4453-b58a-9f8cc5665a92.png) |
+[Re:Mind Flutter Wiki Page](https://github.com/kozeldark/Flutter/wiki)
+
 
 | Gif Template Demo |
 | ----------------- |
 | Source - ![image](https://user-images.githubusercontent.com/67234937/146109083-e55e437a-8cf0-4900-8977-138a89fd9b65.png) target - ![그림1](https://user-images.githubusercontent.com/67234937/146109210-5b15ffb9-9623-42a3-8eac-4c17d11e1d16.gif) = Result Gif file - ![ezgif com-gif-maker](https://user-images.githubusercontent.com/67234937/146109353-a72edd45-8c65-42ce-a038-72722eeadd25.gif) |
+Select template - ![flutter1_1](https://user-images.githubusercontent.com/77625823/171152458-93341d08-e67c-4bde-9f41-bbe87d536a10.gif)
+Flask model running - ![flutter1_3](https://user-images.githubusercontent.com/77625823/171152573-64e1dbd8-45df-4274-96c4-f91c3cad2635.gif)
+Result - ![flutter1_2](https://user-images.githubusercontent.com/77625823/171152636-8ba2fc21-4414-40dc-81ba-bd6084296881.gif)
+
 
 | MP4 (Video) Template Demo |
 | ------------------------- |
@@ -188,8 +190,8 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 * Role
 
 <table>
-<tr> <td>심우석(201636417)</td> <td>Model Lightweight, Server</td> </tr>
-<tr> <td>오찬희(201735855)</td> <td>Model Lightweight, Modeling</td> </tr>
+<tr> <td>심우석(201636417)</td> <td>Model Lightweight(Parameter optimization), Server, Flutter</td> </tr>
+<tr> <td>오찬희(201735855)</td> <td>Model Lightweight(Parameter optimization), Modeling, Server, Flutter</td> </tr>
 <tr> <td>김다혜(201835414)</td> <td>Modeling, Flutter</td> </tr>
-<tr> <td>선다혜(201835466)</td> <td>Modeling, Flutter</td> </tr>
+<tr> <td>선다혜(201835466)</td> <td>Model Lightweight(Parameter optimization), Modeling, Flutter</td> </tr>
 </table>
