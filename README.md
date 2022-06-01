@@ -5,7 +5,7 @@
 
 * ### [Graduation Project Proposal(Youtube) - Re:Mind](https://youtu.be/V59beXzW11Y)
 * ### [Graduation Project Implementation(Youtube) - Re:Mind](https://youtu.be/JECVPx8Vpys)
-* ### [Graduation Project Final(Youtube) - Re:Mind](https://www.youtube.com/watch?v=KEYO8e3j9Ek)
+* ### [Graduation Project Final(Youtube) - Re:Mind](https://youtu.be/FncUGX2JdjE)
 
 ***
 * ### [Graduation Project Faceswap Demo - Re:Mind](https://user-images.githubusercontent.com/67234937/171354185-e338a558-b35a-47f2-a857-1a2178b18097.mp4)
@@ -272,13 +272,23 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 | ![image](https://user-images.githubusercontent.com/67234937/171355267-8dbf10a6-4173-4736-82f3-807b251e4172.png) |
 
 # Marketing Plan
-| Basically, service is free (but not hosted |
-| ------------------------------------------ |
-| * We does not provide hosting due to rising hosting costs and problems with GPU usage costs <br> * User can read how to use it through the Github and download and use the service <br> * The service will be made available to anyone by providing it free of charge | 
+### Basically, service is free (but not hosted)
+* We does not provide hosting due to rising hosting costs and problems with GPU usage costs
+* User can read how to use it through the Github and download and use the service
+* The service will be made available to anyone by providing it free of charge
 
-| (Optional) Regular Sponsored Services |
-| ------------------------------------- |
-| * User can read how to use it through the Github and download and use the service <br> * The service will be made available to anyone by providing it free of charge |
+### Currently, our project is made up of non-commercial open sources.
+* So it is difficult to make a profit
+** Release version using only GPL open sources to make profits such as advertisements and sponsorships
+
+# Marketing Plan (Open Source Ver.)
+1. Regular Sponsored Services
+* User can read how to use it through the Github and download and use the service
+* The service will be made available to anyone by providing it free of charge
+
+2. Putting ads in the time the video is made
+* The time the user waits for the video may be boring
+* Users can spend that time quickly watching advertisements
 
 ***
 # 7. Role and Plan
