@@ -1,6 +1,8 @@
 ### Graduation Project - Re:Mind
 ***
 
+* Final Presentation PDF File - [Final Presentation.pdf](https://github.com/dntjr41/Graduation_project/files/8812206/default.pdf)
+
 * ### [Graduation Project Proposal(Youtube) - Re:Mind](https://youtu.be/V59beXzW11Y)
 * ### [Graduation Project Implementation(Youtube) - Re:Mind](https://youtu.be/JECVPx8Vpys)
 * ### [Graduation Project Final(Youtube) - Re:Mind](https://www.youtube.com/watch?v=KEYO8e3j9Ek)
@@ -88,7 +90,8 @@ Face detection [pre-trained model](https://www.adrianbulat.com/downloads/python-
 > [3. Technologies Used](#3-technologies-used)<br>
 > [4. Implementation Detail](#4-implementation-detail)<br>
 > [5. Progress](#5-progress)<br>
-> [6. Role & Plan](#6-role-and-plan)<br>
+> [6. Marketing Plan](#6-marketing)<br>
+> [7. Role & Plan](#6-role-and-plan)<br>
 
 ***
 # 1. Motivation
@@ -262,7 +265,23 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 |![flutter1](https://user-images.githubusercontent.com/77625823/171154865-436372fc-858d-4e54-8c79-c2ebb60db2c0.gif) | (Simswap)![flutter3](https://user-images.githubusercontent.com/77625823/171154936-50e27e33-e287-4d97-a68b-0fa7181c17c3.gif) (Wav2Lip)![flutter4](https://user-images.githubusercontent.com/77625823/171155009-1a3c56f1-28fe-4fd6-afb6-3fbde813c643.gif) | ![flutter2](https://user-images.githubusercontent.com/77625823/171155090-f18ace8a-d25b-4894-bea7-429dcd0a8b5f.gif)|
 
 ***
-# 6. Role and Plan
+# 8. Marketing Plan
+
+| SWOT Analysis |
+| ------------- |
+| ![image](https://user-images.githubusercontent.com/67234937/171355267-8dbf10a6-4173-4736-82f3-807b251e4172.png) |
+
+# Marketing Plan
+| Basically, service is free (but not hosted |
+| ------------------------------------------ |
+| * We does not provide hosting due to rising hosting costs and problems with GPU usage costs <br> * User can read how to use it through the Github and download and use the service <br> * The service will be made available to anyone by providing it free of charge | 
+
+| (Optional) Regular Sponsored Services |
+| ------------------------------------- |
+| * User can read how to use it through the Github and download and use the service <br> * The service will be made available to anyone by providing it free of charge |
+
+***
+# 7. Role and Plan
 * Plan
 * ![plan](https://user-images.githubusercontent.com/67234937/146101634-fbb26b30-3a7d-46a8-a67a-9d8bf08652e4.PNG)
 
