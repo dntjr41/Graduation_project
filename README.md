@@ -3,8 +3,68 @@
 
 * ### [Graduation Project Proposal(Youtube) - Re:Mind](https://youtu.be/V59beXzW11Y)
 * ### [Graduation Project Implementation(Youtube) - Re:Mind](https://youtu.be/JECVPx8Vpys)
-* ### [Graduation Project Faceswap Demo(Youtube) - Re:Mind](https://youtu.be/Powcvba2DL8)
-* ### [Graduation Project Faceswap + Wav2Lip Demo(Youtube) - Re:Mind](https://youtu.be/39xPC3CapwU)
+* ### [Graduation Project Final(Youtube) - Re:Mind](https://www.youtube.com/watch?v=KEYO8e3j9Ek)
+
+***
+* ### [Graduation Project Faceswap Demo - Re:Mind](https://user-images.githubusercontent.com/67234937/171354185-e338a558-b35a-47f2-a857-1a2178b18097.mp4)
+
+* ### [Graduation Project Faceswap + Wav2Lip Demo - Re:Mind](https://user-images.githubusercontent.com/67234937/171354197-1d87a611-b7cb-4564-b3c8-f05d83a45803.mp4)
+
+***
+# Re:Mind Setting
+
+## Setting computer
+
+### Require *Nvidia* GPU
+
+### Install Cuda Toolkit(After Check your Graphic card, install 10.2 version)
+
+[CUDA Toolkit 10.2 Download](https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exenetwork)
+
+### After Sign in, install cuDNN with same Cuda Toolkit
+
+[](https://developer.nvidia.com/rdp/cudnn-download#a-collapse714-92)
+
+### Install Anaconda
+
+[https://www.anaconda.com/](https://www.anaconda.com/)
+
+Implement command on Anaconda prompt
+
+**Simswap Preparation**
+
+```python
+conda create -n simswap python=3.6
+conda activate simswap
+conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=10.2 -c pytorch
+(option): pip install --ignore-installed imageio
+pip install insightface==0.2.1 onnxruntime moviepy
+(option): pip install onnxruntime-gpu
+```
+
+Open **VScode**, and press  Ctrl+Shift+P
+
+*Python: Select Interpreter* → Python 3.6.13(’simswap’) 선택
+
+*Terminal: Select Default Profile* → Command prompt 선택
+
+**Pretrained model**
+
+There are two archive files in the drive: **checkpoints.zip** and **arcface_checkpoint.tar**
+
+- **Copy the arcface_checkpoint.tar into ./arcface_model**
+- **Unzip checkpoints.zip, place it in the root dir ./**
+
+[[Google Drive]](https://drive.google.com/drive/folders/1jV6_0FIMPC53FZ2HzZNJZGMe55bbu17R?usp=sharing) [[Baidu Drive]](https://pan.baidu.com/s/1wFV11RVZMHqd-ky4YpLdcA)
+
+**Wav2Lip Preparation**
+
+```python
+pip install -r requirements.txt
+```
+
+Face detection [pre-trained model](https://www.adrianbulat.com/downloads/python-fan/s3fd-619a316812.pth)
+ should be downloaded to `face_detection/detection/sfd/s3fd.pth`
 
 ***
 ### Dependencies
@@ -83,18 +143,19 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 | 1. Gif File (3 ~ 4 Seconds) + No Voice file <br> ![image](https://user-images.githubusercontent.com/67234937/146105153-c384efe7-1c62-49d9-aec2-9da4d98493f1.png) |
 | 2. MP4 file (30~60 Seconds) + Voice file <br> ![image](https://user-images.githubusercontent.com/67234937/146105203-0ce68a35-4b91-4922-87a5-e6f4f9742471.png) |
 
-* Sequence Diagram <br> ![image](https://user-images.githubusercontent.com/67234937/146105242-c19ec3b3-878e-4f73-b4e4-488f444c9f5f.png)
-* Usecase Diagram <br> ![image](https://user-images.githubusercontent.com/67234937/146105291-4570f9cd-2a40-4ab6-9daa-bb35e4d890a4.png)
+| Sequence Diagram | Usecase Diagram |
+| ---------------- | --------------- |
+| ![image](https://user-images.githubusercontent.com/67234937/146105242-c19ec3b3-878e-4f73-b4e4-488f444c9f5f.png) | ![image](https://user-images.githubusercontent.com/67234937/146105291-4570f9cd-2a40-4ab6-9daa-bb35e4d890a4.png) |
 
 ### Structure
-![image](https://user-images.githubusercontent.com/67234937/146105333-a7c79e6d-f946-42bf-9c28-fa88b0735ddc.png)
+![image](https://user-images.githubusercontent.com/67234937/171352585-9d205fa7-3dc7-4793-baa7-55cbd39eeec1.png)
 
 ***
 # 3. Technologies used
 
-| Model |
-| ----- |
-| ![image](https://user-images.githubusercontent.com/67234937/146105492-b22a91f0-1bcb-43c0-87a1-4e49429cfdb2.png) |
+| Model & System Flow |
+| ------------------- |
+| ![image](https://user-images.githubusercontent.com/67234937/146105492-b22a91f0-1bcb-43c0-87a1-4e49429cfdb2.png) <br> ![image](https://user-images.githubusercontent.com/67234937/171352776-3b97dff3-6166-4aee-a721-0c9e3be5e000.png)|
 | Requirements - Training Time, Convenience |
 
 | Model - Deep Fake [(Reference.SimSwap)](https://github.com/neuralchen/SimSwap) |
@@ -176,13 +237,11 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 ***
 # 5. Progress
 
-| Template (GIF 짤방) | Template (MP4) |
+* Flutter Demo - [Re:Mind Flutter Wiki Page](https://github.com/kozeldark/Flutter/wiki)
+
+| Template (GIF 짤방 - 33) | Template (MP4 - 9) |
 | ------------------ | --------------- |
 | ![gif_tem](https://user-images.githubusercontent.com/77625823/171157362-b704cdd6-73f2-4860-8ad6-2dc2155eee0c.png)| ![mp4_tem](https://user-images.githubusercontent.com/77625823/171157384-c8425f09-8700-452d-98ad-f35915eda681.png)|
-
-| Flutter Demo |
-| ------------ |
-[Re:Mind Flutter Wiki Page](https://github.com/kozeldark/Flutter/wiki)
 
 
 | Gif Template Demo |
@@ -210,8 +269,13 @@ It can give us fun and meaningful memories to reminisce about loved ones.
 * Role
 
 <table>
-<tr> <td>심우석(201636417)</td> <td>Model Lightweight(Parameter optimization), Server, Flutter</td> </tr>
-<tr> <td>오찬희(201735855)</td> <td>Model Lightweight(Parameter optimization), Modeling, Server, Flutter</td> </tr>
-<tr> <td>김다혜(201835414)</td> <td>Modeling, Flutter</td> </tr>
-<tr> <td>선다혜(201835466)</td> <td>Model Lightweight(Parameter optimization), Modeling, Flutter</td> </tr>
+<tr> <td>심우석(201636417)</td> <td>qkqh8639@gmail.com</td> <td>Model Lightweight(Parameter optimization), Server, Flutter</td> </tr>
+<tr> <td>오찬희(201735855)</td> <td>fasvvc@gmail.com</td> <td>Model Lightweight(Parameter optimization), Modeling, Server, Flutter</td> </tr>
+<tr> <td>김다혜(201835414)</td> <td>ekgp3987@naver.com</td> <td>Modeling, Flutter</td> </tr>
+<tr> <td>선다혜(201835466)</td> <td>adad05011@gachon.ac.kr</td> <td>Model Lightweight(Parameter optimization), Modeling, Flutter</td> </tr>
 </table>
+
+***
+### Copyright
+The file above is open source. Please contact us by [email](qkqh8639@gmail.com) <br>
+if you would like commercial use, except for non-commercial use.
